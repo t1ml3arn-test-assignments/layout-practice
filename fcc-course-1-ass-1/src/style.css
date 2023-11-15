@@ -132,3 +132,78 @@ main {
 	max-width: 1060px;
 	margin: 0 auto;
 }
+
+.feature > * {
+	margin: 0 auto;
+}
+
+.feature-h2-supper-text {
+	margin-bottom: 8px;
+	color: #2858FF;
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.feature > h2 {
+	margin: 0 auto;
+	margin-bottom: 8px;
+	max-width: 600px;
+	text-align: center;
+}
+
+.feature-description {
+	max-width: 700px;
+	margin-bottom: 48px;
+	color: #190D37;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-align: center;
+}
+
+.service-list {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin-bottom: 98px;
+	list-style: none;
+	gap: 20px;
+}
+
+.service-list-card {
+	max-width: 33.33%;
+	padding: 20px;
+	flex: 1 1 auto;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 6px 2px 25px -9px rgba(0, 0, 0, 0.10);
+}
+
+.service-type {
+	color: #000;
+	text-align: center;
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.service-type-info {
+	color: #55206D;
+	text-align: center;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 150% */
+}
