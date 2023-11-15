@@ -131,6 +131,7 @@ header {
 main {
 	max-width: 1060px;
 	margin: 0 auto;
+	margin-bottom: 127px;
 }
 
 .feature > * {
@@ -209,4 +210,88 @@ main {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 24px; /* 150% */
+}
+
+.project-list {
+	list-style: none;
+	margin-top: 48px;
+}
+
+.project-list > li {
+	margin-bottom: 40px;
+}
+
+.project-list-proj-icon {
+	width: 160px;
+	height: 160px;
+	margin-right: 20px;
+	float: left;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	/* background-color: #19ACFF; */
+}
+
+.project-list-proj-icon::before {
+	content: "PN";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	color: #FFF;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.project-list-proj-name {
+	margin: 0;
+	margin-bottom: 8px;
+	color: #291854;
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.project-list-proj-info {
+	margin: 0;
+	margin-bottom: 8px;
+	color: #55206D;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 150% */
+}
+
+.project-list-proj-link {
+	color: #6A87A3;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration: none;
+}
+
+.project-list-proj-link:hover {
+	text-decoration: underline;
+}
+
+.project-list > li:nth-child(3n+1) .project-list-proj-icon {
+	background-color: #19ACFF;
+}
+
+.project-list > li:nth-child(3n + 2) .project-list-proj-icon {
+	background-color: #FFE819;
+}
+
+.project-list > li:nth-child(3n) .project-list-proj-icon {
+	background-color: #FF1919;
 }
