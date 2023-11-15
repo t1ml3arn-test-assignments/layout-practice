@@ -4,20 +4,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Freelance Front-end self-tribute Site</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=League+Spartan:wght@400;700&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+
+	<!-- absolute url to normalize.css for deployment -->
+	<link rel="stylesheet" href="/common/normalize.css">
+	<!-- relative link to normalize.css for local test -->
+	<link rel="stylesheet" href="../../common/normalize.css">
+
+	<!-- absolute url to common.css for deployment -->
+	<link rel="stylesheet" href="/common/common.css">
+	<!-- relative link to common.css for local test -->
+	<link rel="stylesheet" href="../../common/common.css">
+
+	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
 	<!-- hero section -->
-	<header>
-		<address>
-			<a href="mailto:ferdisahin@mail.com">ferdisahin@mail.com</a>
-			<a href="tel:+905510524356">(+90) 551 052 43 56</a>
-		</address>
+	<header class="hero-grid">
 
-		<p>Hi, I’m Ferdi Sahin</p>
-		<h1>Freelance Front-end Developer and Wordpress Developer</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a elit in, convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est pretium non. </p>
-		<button type="button">Contact Me</button>
+		<div class="hero-info-wrap">
+			<address>
+				<a href="tel:+905510524356">(+90) 551 052 43 56</a>
+				<a href="mailto:ferdisahin@mail.com">ferdisahin@mail.com</a>
+			</address>
+	
+			<p class="hero-supper-text">Hi, I’m Ferdi Sahin</p>
+			<h1>Freelance Front-end Developer <span class="weight-normal">and</span> Wordpress Developer</h1>
+			<p class="hero-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a elit in, convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est pretium non. </p>
+			<button type="button">Contact Me</button>
+		</div>
+
+
+		<!-- NOTE: img with w-100 and h-auto works without wrapper -->
+		<img class="main-photo" src="./img/Ferdi-Sahin-photo.jpg" alt="Ferdi Sahin photo">
 
 	</header>
 
@@ -32,15 +56,15 @@
 			<!-- list of services -->
 			<ul>
 				<li>
-					<p class="service-type-name"></p>
+					<p class="service-type-name">Front-end development</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a elit in, convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est pretium non. Fusce fringilla, sem sit amet egestas sagittis, lorem nisi aliquam metus, vitae porta ligula enim in nisl.</p>
 				</li>
 				<li>
-					<p class="service-type-name"></p>
+					<p class="service-type-name">Back-end development</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a elit in, convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est pretium non. Fusce fringilla, sem sit amet egestas sagittis, lorem nisi aliquam metus, vitae porta ligula enim in nisl.</p>
 				</li>
 				<li>
-					<p class="service-type-name"></p>
+					<p class="service-type-name">Interface development</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis ligula, pellentesque a elit in, convallis laoreet metus. Sed aliquet lacinia dictum. In pharetra nunc nisi, ac aliquet est pretium non. Fusce fringilla, sem sit amet egestas sagittis, lorem nisi aliquam metus, vitae porta ligula enim in nisl.</p>
 				</li>
 			</ul>

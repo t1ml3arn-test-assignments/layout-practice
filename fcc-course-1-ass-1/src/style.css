@@ -1,0 +1,134 @@
+:root {
+
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+
+	font-family: Poppins;
+	font-size: 16px;
+	color: #331E6A;
+
+	background-color: #FFF8F0;
+}
+
+.hero-grid {
+	--col-count: 12;
+	--col-size: 70px;
+	--gap-size: 20px;
+	--half-size: calc(6 * var(--col-size) + 5 * var(--gap-size));
+
+	display: grid;
+	grid-template-columns: 
+		calc(50% - var(--half-size) - var(--gap-size) * 0.5) 
+		[content-start] var(--half-size) [content-end] 
+		var(--gap-size) 
+		[hero-image-start] calc(50% - var(--gap-size)*0.5) [hero-image-end];
+}
+
+.hero-info-wrap {
+	grid-column: content-start;
+}
+
+address {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 49px;
+}
+
+address a {
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	color: black;
+}
+
+address a::before {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+	vertical-align: middle;
+	content: "";
+}
+
+address a[href^="tel:"]::before {
+	background-image: url(./img/phone-icon.svg);
+}
+
+address a[href^="mailto:"]::before {
+	background-image: url(./img/mail-icon.svg);
+}
+
+.hero-supper-text {
+	margin-bottom: 10px;
+	font-weight: 500;
+	letter-spacing: 0%;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #291854;
+}
+
+h1 {
+	margin: 0;
+	margin-bottom: 30px;
+	color: #190D37;
+	font-family: League Spartan, Arial, Helvetica, sans-serif;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 50px; /* 104.167% */
+}
+
+.hero-info-text {
+	margin-bottom: 20px;
+	color: #331E6A; 
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px; /* 177.778% */ 
+}
+
+button, .btn {
+	display: inline-block;
+	padding: 12px 24px;
+
+	color: #FFF;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal; 
+
+	border: none;
+	border-radius: 4px;
+	background-color: #2F2F2F;
+
+	cursor: pointer;
+}
+
+.main-photo {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 710px;
+	max-height: 600px;
+	border-bottom-left-radius: 200px;
+	border-bottom-right-radius: 200px;
+	object-fit: cover;
+	grid-column: hero-image-start;
+}
+
+header {
+	margin-bottom: 96px;
+}
+
+main {
+	max-width: 1060px;
+	margin: 0 auto;
+}
