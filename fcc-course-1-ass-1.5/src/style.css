@@ -131,11 +131,11 @@ button, .btn {
 	position: absolute; 
 	top: 0;
 	left: 0;
+	filter: blur(125px);
 }
 
 header .deco-shape {
 	z-index: -1;
-	filter: blur(125px);
 }
 
 .deco-shape[src*="-2"] {
@@ -203,6 +203,26 @@ main {
 	margin-bottom: 98px;
 	list-style: none;
 	gap: 20px;
+}
+
+.service-list-wrap {
+	position: relative;
+	z-index: 0;
+}
+
+.service-list-wrap .deco-shape {
+	position: absolute;
+	inset: initial;
+	z-index: -1;
+}
+
+.service-list-wrap .deco-shape[src*="-4"] {
+	right: -100px;
+	top: -116px;
+}
+.service-list-wrap .deco-shape[src*="-3"] {
+	left: -112px;
+	bottom: -88px;
 }
 
 .service-list-card {
