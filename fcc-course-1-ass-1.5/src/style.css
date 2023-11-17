@@ -186,10 +186,10 @@ header {
 
 main {
 	margin: 0 auto;
-	margin-bottom: 127px;
+	margin-bottom: 98px;
 }
 
-section.feature {
+section.feature:not(:last-child) {
 	margin-bottom: 98px;
 }
 
@@ -498,6 +498,54 @@ section.feature {
 	margin-top: -150px;
 	margin-left: -150px;
 }
+
+.qa-list {
+	margin: 0 auto;
+	max-width: 700px;
+	overflow: hidden;
+}
+
+.qa-list dt {
+	margin-bottom: 8px;
+	color: #55206D;
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal; 
+	cursor: pointer;
+}
+
+.qa-list dt:hover {
+	background-color: rgba(0, 0, 0, 0.048);
+}
+
+.qa-list dd {
+	margin: 0;
+	margin-bottom: 16px;
+	color: #6A87A3;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px; /* 171.429% */
+}
+
+.qa-list > dt + dd {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0s linear;
+}
+
+.answer-opener:checked + * .dropdown-icon {
+	--rotation: -135deg;
+	--y-coord: 10px;
+}
+
+.answer-opener:checked + dt + dd {
+	max-height: 500px;
+	transition: max-height 0.5s linear;
+} 
 
 footer {
 	padding: 20px 0;

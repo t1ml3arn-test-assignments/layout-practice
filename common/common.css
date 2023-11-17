@@ -11,7 +11,15 @@
 	flex-flow: row wrap;
 }
 
+.justify-content-around, .flex-around { justify-content: space-around; }
+.justify-content-between, .flex-between { justify-content: space-between; }
+.align-items-start, .align-start { align-items: start; }
+
 .flex-nowrap { flex-wrap: nowrap; }
+
+/* cursor styles */
+
+.cursor-pointer { cursor: pointer; }
 
 /* shared size classes */
 
@@ -22,4 +30,42 @@
 .w-75 { width: 75%; }
 .w-100 { width: 100%; }
 
+/* display classes */
+
 .d-none { display: none !important; }
+
+/* deco elements */
+
+.dropdown-icon {
+	--elt-size: 24px;
+	--icon-size: 12px;
+	--line-size: 2px;
+	--color: currentColor;
+	--rotation: 45deg;
+	--y-coord: 3px;
+
+	display: inline-block;
+	width: var(--elt-size);
+	height: var(--elt-size);
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.dropdown-icon::after {
+	content: "";
+	display: block;
+	width: var(--icon-size);
+	height: var(--icon-size);
+	border-bottom: var(--line-size) solid var(--color);
+	border-right: var(--line-size) solid var(--color);
+	transform: translate(6px, var(--y-coord)) rotate(var(--rotation));
+	transition: transform 0.25s;
+}
+
+.dropdown-icon.open::after { 
+	transform: translate(6px, var(--y-coord)) rotate(var(--rotation)); 
+}
+.dropdown-icon.closed::after { 
+	--rotation: -135deg;
+	--y-coord: 8px;
+}
