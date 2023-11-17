@@ -4,8 +4,6 @@ Here I do html layout practice - transform design mockups to actual html+css pag
 
 ## Notes
 
-I plan to publish this as a github page and do completely different layout projects, so all URL's should be relative.
-
 ## Set-up live-server
 
 - `npm install -g live-server`
