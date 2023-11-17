@@ -8,7 +8,7 @@ I plan to publish this as a github page and do completely different layout proje
 
 ## Set-up live-server
 
-- `npm install live-server`
+- `npm install -g live-server`
 - `live-server --mount=/common:common --port=3000 [PATH]`
 	- `--mount=/common:common` to mount common files to `/common` route
 	- `[PATH]` to the site root dir (dir with `index.html` file)
