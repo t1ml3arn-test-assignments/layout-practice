@@ -84,6 +84,23 @@ h1 {
 	line-height: 50px; /* 104.167% */
 }
 
+.underline-deco {
+	position: relative;
+}
+
+.underline-deco::after {
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-image: url(./img/underline-deco.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: 0;
+	top: calc(100% - 16px);
+	z-index: -1;
+}
+
 .hero-info-text {
 	margin-bottom: 20px;
 	color: #331E6A; 
