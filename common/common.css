@@ -21,3 +21,5 @@
 .w-66 { width: 66.66%; }
 .w-75 { width: 75%; }
 .w-100 { width: 100%; }
+
+.d-none { display: none !important; }
