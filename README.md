@@ -1,6 +1,6 @@
 # Markup Practice Repository
 
-Here I do some html markup practice - transform design mockups to an actual wep page
+Here I do html layout practice - transform design mockups to actual html+css pages
 
 ## Notes
 
