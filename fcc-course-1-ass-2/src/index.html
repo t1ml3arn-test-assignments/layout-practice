@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Responsive Design Layout</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/normalize.css">
-	<link rel="stylesheet" href="/common.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Libre+Caslon+Display&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/common/normalize.css">
+	<link rel="stylesheet" href="/common/common.css">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	
+
+	<header>
+		<div class="d-flex flex-between align-items-center container">
+			<h1 class="header-logo">ARTJUNKS</h1>
+			<nav class="header-nav">
+				<button class="open-main-menu" type="button" title="open main menu"></button>
+				<menu class="main-menu d-none">
+					<li><a href="#!" class="main-menu-link">Home</a></li>
+					<li><a href="#!" class="main-menu-link">About</a></li>
+					<li><a href="#!" class="main-menu-link">Artists</a></li>
+					<li><a href="#!" class="main-menu-link">Careers</a></li>
+					<li><a href="#!" class="main-menu-link">News</a></li>
+					<li><a href="#!" class="main-menu-link">Company</a></li>
+					<li><a href="#!" class="btn">Get started</a></li>
+				</menu>
+			</nav>
+		</div>
+
+		<div class="container site-title-wrap">
+			<em class="site-title">Art pieces made easy accessible for everyone</em>
+			<p class="site-subtitle">Learn, buy and trade art pieces of your favorite artist around the world by using crypto
+				currencies.</p>
+			<a class="btn" href="#!">Learn more</a>
+		</div>
+	</header>
+
+	<main>
+		<section class="news">
+
+			<article class="news-card">
+				<img class="news-card-img" src="#!" alt="News article's image">
+				<time datetime="2022-08-05">5 August, 2022</time>
+				<p class="news-card-body">France seeks to protect Russia's Morozov collection from seizure as masterpieces
+					return home</p>
+				<a class="read-more" href="#!">Read more -&gt;</a>
+			</article>
+
+			<article class="news-card">
+				<img class="news-card-img" src="#!" alt="News article's image">
+				<time datetime="2022-08-05">5 August, 2022</time>
+				<p class="news-card-body">Picasso’s muse as sea creature—will it break $100m at Sotheby's New York sale?</p>
+				<a class="read-more" href="#!">Read more -&gt;</a>
+			</article>
+
+		</section>
+	</main>
+
 </body>
+
 </html>

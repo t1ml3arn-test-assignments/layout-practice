@@ -13,6 +13,7 @@
 .justify-content-around, .flex-around { justify-content: space-around; }
 .justify-content-between, .flex-between { justify-content: space-between; }
 .align-items-start, .align-start { align-items: start; }
+.align-items-center, .align-center { align-items: center; }
 
 .flex-nowrap { flex-wrap: nowrap; }
 
@@ -32,6 +33,13 @@
 /* display classes */
 
 .d-none { display: none !important; }
+
+.v-hidden {
+	width: 0;
+	height: 0;
+	position: absolute;
+	overflow: hidden;
+}
 
 /* deco elements */
 

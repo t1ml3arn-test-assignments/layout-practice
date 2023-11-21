@@ -5,6 +5,7 @@
 	--color-ember: #D9852C;
 
 	margin: 0;
+	padding: 0;
 	width: 100%;
 
 	font-family: Inter, Arial, Helvetica, sans-serif;
@@ -15,5 +16,90 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
-	
+	margin: 0;
+	padding: 0;
+}
+
+button, .btn {
+	display: inline-block;
+	padding: 7px 26px 9px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: normal;
+	color: white;
+	text-decoration: none;
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+.container {
+	margin: 0 32px;
+}
+
+header {
+	--bg-overlay-color: rgba(33,33,33,0.5);
+	min-height: 1024px;
+	height: 100vh;
+	/* to prevent margin collapse */
+	padding-top: 0.01px;
+	margin-bottom: 80px;
+	color: white;
+
+	background: lightgray;
+	background: 
+		linear-gradient(var(--bg-overlay-color),var(--bg-overlay-color)),
+		url(/img/artjunks-main-bg.jpg) no-repeat center/cover, lightgray ;
+}
+
+.header-logo {
+	margin: 32px 0;
+	font-weight: 900;
+	font-size: 30.4px;
+	line-height: normal;
+}
+
+.open-main-menu {
+	--size: 2.33rem;
+	width: var(--size);
+	height: var(--size);
+	padding: 0;
+	background: url(/img/hamburger-icon.svg) center no-repeat;
+	border: none;
+}
+
+.site-title-wrap {
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	margin-top: 216px;
+	/* position: relative; */
+}
+
+.site-title-wrap::before {
+	content: "";
+	display: block;
+	width: 90px;
+	height: 15px;
+	background-color: white;
+}
+
+.site-title-wrap > *:not(:last-child), 
+.site-title-wrap::before {
+	margin: 0;
+	margin-bottom: 32px;
+} 
+
+.site-title {
+	font-family: "Libre Caslon Display", Arial, Helvetica, sans-serif;
+	font-size: 50px;
+	font-style: normal;
+	-webkit-text-stroke: 1px currentColor;
+}
+
+.site-subtitle {
+	font-size: 18px;
+	line-height: 168.5%;
 }
