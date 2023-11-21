@@ -1,6 +1,15 @@
 :root {
+	--color-dark: #212121;
+	--color-gray: #B7B7B7;
+	--color-light-gray: #DDDDDD;
+	--color-ember: #D9852C;
+
 	margin: 0;
 	width: 100%;
+
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 500;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
