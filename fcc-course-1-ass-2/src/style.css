@@ -46,10 +46,11 @@ button:hover, .btn:hover {
 
 header {
 	--bg-overlay-color: rgba(33,33,33,0.5);
-	min-height: 1024px;
-	height: 100vh;
+	min-height: 100vh;
 	/* to prevent margin collapse */
 	padding-top: 0.01px;
+	padding-bottom: 0.01px;
+
 	margin-bottom: 80px;
 	color: white;
 
@@ -81,7 +82,7 @@ header {
 	flex-flow: column;
 	align-items: flex-start;
 	margin-top: 216px;
-	/* position: relative; */
+	margin-bottom: 32px;
 }
 
 .site-title-wrap::before {
@@ -266,5 +267,12 @@ a:hover:not(.btn) {
 
 	.news-card-body time {
 		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.container {
+		margin-left: auto !important;
+		margin-right: auto !important;
 	}
 }
