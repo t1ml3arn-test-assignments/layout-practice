@@ -57,7 +57,7 @@ header {
 	background: lightgray;
 	background: 
 		linear-gradient(var(--bg-overlay-color),var(--bg-overlay-color)),
-		url(/img/artjunks-main-bg.jpg) no-repeat center/cover, lightgray ;
+		url(/img/artjunks-main-bg.png) no-repeat center/cover, lightgray ;
 }
 
 .header-logo {
