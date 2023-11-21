@@ -17,20 +17,22 @@
 <body>
 
 	<header>
-		<div class="d-flex flex-between align-items-center container">
-			<h1 class="header-logo">ARTJUNKS</h1>
-			<nav class="header-nav">
-				<button class="open-main-menu" type="button" title="open main menu"></button>
-				<menu class="main-menu d-none">
-					<li><a href="#!" class="main-menu-link">Home</a></li>
-					<li><a href="#!" class="main-menu-link">About</a></li>
-					<li><a href="#!" class="main-menu-link">Artists</a></li>
-					<li><a href="#!" class="main-menu-link">Careers</a></li>
-					<li><a href="#!" class="main-menu-link">News</a></li>
-					<li><a href="#!" class="main-menu-link">Company</a></li>
-					<li><a href="#!" class="btn">Get started</a></li>
-				</menu>
-			</nav>
+		<div class="container">
+			<div class="d-flex flex-between align-items-center">
+				<h1 class="header-logo">ARTJUNKS</h1>
+				<nav class="header-nav">
+					<button class="open-main-menu" type="button" title="open main menu"></button>
+					<menu class="main-menu d-none">
+						<li><a href="#!" class="main-menu-link">Home</a></li>
+						<li><a href="#!" class="main-menu-link">About</a></li>
+						<li><a href="#!" class="main-menu-link">Artists</a></li>
+						<li><a href="#!" class="main-menu-link">Careers</a></li>
+						<li><a href="#!" class="main-menu-link">News</a></li>
+						<li><a href="#!" class="main-menu-link">Company</a></li>
+						<li><a href="#!" class="btn">Get started</a></li>
+					</menu>
+				</nav>
+			</div>
 		</div>
 
 		<div class="container site-title-wrap">
@@ -42,22 +44,36 @@
 	</header>
 
 	<main>
-		<section class="news">
+		<section class="news container">
+			<h2>Newest reads</h2>
 
-			<article class="news-card">
-				<img class="news-card-img" src="#!" alt="News article's image">
-				<time datetime="2022-08-05">5 August, 2022</time>
-				<p class="news-card-body">France seeks to protect Russia's Morozov collection from seizure as masterpieces
-					return home</p>
-				<a class="read-more" href="#!">Read more -&gt;</a>
-			</article>
-
-			<article class="news-card">
-				<img class="news-card-img" src="#!" alt="News article's image">
-				<time datetime="2022-08-05">5 August, 2022</time>
-				<p class="news-card-body">Picasso’s muse as sea creature—will it break $100m at Sotheby's New York sale?</p>
-				<a class="read-more" href="#!">Read more -&gt;</a>
-			</article>
+			<div class="news-list">
+				<article class="news-card">
+					<img class="news-card-img" src="/img/news-img-1.jpg" alt="News article's image" width="100" height="100">
+					<div class="news-card-body">
+						<time datetime="2022-08-05">5 August, 2022</time>
+						<p class="news-title">France seeks to protect Russia's Morozov collection from seizure as masterpieces
+							return home</p>
+						<a class="read-more" href="#!">Read more -&gt;</a>
+					</div>
+				</article>
+				<article class="news-card">
+					<img class="news-card-img" src="/img/news-img-2.jpg" alt="News article's image" width="100" height="100">
+					<div class="news-card-body">
+						<time datetime="2022-08-05">5 August, 2022</time>
+						<p class="news-title">Picasso’s muse as sea creature—will it break $100m at Sotheby's New York sale?</p>
+						<a class="read-more" href="#!">Read more -&gt;</a>
+					</div>
+				</article>
+				<article class="news-card">
+					<img class="news-card-img" src="/img/news-img-3.jpg" alt="News article's image" width="100" height="100">
+					<div class="news-card-body">
+						<time datetime="2022-08-05">5 August, 2022</time>
+						<p class="news-title">Venice Biennale 2022: all the national pavilions, artists and curators</p>
+						<a class="read-more" href="#!">Read more -&gt;</a>
+					</div>
+				</article>
+			</div>
 
 		</section>
 	</main>
