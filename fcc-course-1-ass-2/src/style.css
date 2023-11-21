@@ -118,6 +118,8 @@ section h2 {
 }
 
 .news-card {
+	display: flex;
+	flex-flow: column;
 	border: 1px solid var(--color-light-gray);
 	border-top: none;
 	border-radius: 4px;
@@ -135,6 +137,7 @@ section h2 {
 .news-card-body {
 	display: flex;
 	flex-flow: column;
+	flex-grow: 1;
 	padding: 35px 32px 32px;
 }
 
@@ -145,7 +148,8 @@ section h2 {
 	color: var(--color-gray);
 }
 
-.news-card .news-title {
+.news-title {
+	flex-grow: 1;
 	margin: 32px 0;
 	font-size: 20px;
 	font-weight: bold;
@@ -157,3 +161,47 @@ section h2 {
 	text-decoration: none;
 }
 
+a:hover:not(.btn) {
+	text-decoration: underline;
+}
+
+/* tablet */
+@media screen and (min-width: 745px) {
+	.container {
+		margin-left: 72px;
+		margin-right: 72px;
+	}
+
+	header > .nav-wrap {
+		margin-left: 32px;
+		margin-right: 32px;
+	}
+
+	.site-title {
+		font-size: 70px;
+	}
+
+	section h2 {
+		font-size: 30px;
+	}
+
+	.news-list {
+		display: flex;
+		flex-flow: row;
+	}
+
+	.news-card {
+		/* 3 * w - 2 * g */
+		/* credits for formula 
+		https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
+		width: calc(33.33% - (2/3 * 20px));
+	}
+	
+	.news-card:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	.news-title {
+		font-size: 15px;
+	}
+}
