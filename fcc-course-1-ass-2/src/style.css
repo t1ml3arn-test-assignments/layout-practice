@@ -34,8 +34,14 @@ button, .btn {
 	cursor: pointer;
 }
 
+button:hover, .btn:hover {
+	background-color: #FFF5;
+}
+
 .container {
 	margin: 0 32px;
+	/* 1440 - 2 * 72 */
+	max-width: 1296px;
 }
 
 header {
@@ -67,6 +73,7 @@ header {
 	padding: 0;
 	background: url(/img/hamburger-icon.svg) center no-repeat;
 	border: none;
+	border-radius: 0;
 }
 
 .site-title-wrap {
@@ -202,6 +209,62 @@ a:hover:not(.btn) {
 	}
 
 	.news-title {
+		font-size: 15px;
+	}
+}
+
+.main-menu {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	display: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.main-menu .get-started {
+	margin-left: 17.5px;
+}
+
+.main-menu-link {
+	padding: 10px 17.5px;
+	font-size: 18px;
+	color: white;
+	line-height: normal;
+	text-decoration: none !important;
+}
+
+.main-menu-link:hover {
+	background-color: #FFF5;
+	/* 10px (original padding) - 3px (border size) */
+	padding-bottom: 7px;
+	border-bottom: 3px solid #FFFC;
+}
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+	.open-main-menu {
+		display: none;
+	}
+
+	.main-menu {
+		display: inline-flex;
+	}
+
+	.site-title {
+		font-size: 80px;
+	}
+
+	section h2 {
+		font-size: 40px;
+	}
+
+	.news-title {
+		font-size: 25px;
+	}
+
+	.news-card-body time {
 		font-size: 15px;
 	}
 }
