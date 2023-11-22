@@ -21,6 +21,7 @@ body {
 }
 
 button, .btn {
+	--hover-bg-color: #FFF5;
 	display: inline-block;
 	padding: 7px 26px 9px;
 	font-size: 18px;
@@ -29,13 +30,13 @@ button, .btn {
 	color: white;
 	text-decoration: none;
 	background: transparent;
-	border: 2px solid white;
+	border: 2px solid currentColor;
 	border-radius: 10px;
 	cursor: pointer;
 }
 
 button:hover, .btn:hover {
-	background-color: #FFF5;
+	background-color: var(--hover-bg-color);
 }
 
 .container {
@@ -229,6 +230,7 @@ a:hover:not(.btn) {
 }
 
 .main-menu-link {
+	display: block;
 	padding: 10px 17.5px;
 	font-size: 18px;
 	color: white;
@@ -240,11 +242,79 @@ a:hover:not(.btn) {
 	background-color: #FFF5;
 	/* 10px (original padding) - 3px (border size) */
 	padding-bottom: 7px;
-	border-bottom: 3px solid #FFFC;
+	border-bottom: 3px solid currentColor;
+}
+
+.main-menu-link.active {
+	/* 10px (original padding) - 3px (border size) */
+	padding-bottom: 7px;
+	border-bottom: 3px solid currentColor;
+}
+
+.main-menu .backdrop {
+	display: none;
+}
+
+@media screen and (max-width: 1199.99px) {
+	/* header must be positioned for 
+	modal to work*/
+	header {
+		position: relative;
+	}
+
+	.header-nav {
+		position: relative;
+		/* set explicit dept to put header nav 
+		on top of all <header> content*/
+		z-index: 100;
+	}
+
+	.main-menu {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: flex-end;
+		padding: 16px;
+		color: var(--color-dark);
+		background: white;
+		border-radius: 4px;
+		position: absolute;
+		top: 100%;
+		right: 0;
+	}
+
+	/* hide menu when menu button is not clicked */
+	.main-menu:not(:target) {
+		display: none;
+	}
+
+	.main-menu .backdrop {
+		content: "";
+		display: block;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		background-color: rgba(32, 32, 32, 0.75);
+		cursor: pointer;
+	}
+
+	.main-menu .get-started { 
+		--hover-bg-color: #2222;
+		margin: 20px 0 0;
+	}
+
+	.main-menu-link, .main-menu .btn {
+		color: var(--color-dark);
+		white-space: nowrap;
+	}
 }
 
 /* desktop */
 @media screen and (min-width: 1200px) {
+	
 	.open-main-menu {
 		display: none;
 	}
@@ -255,6 +325,7 @@ a:hover:not(.btn) {
 
 	.site-title {
 		font-size: 80px;
+		max-width: 65%;
 	}
 
 	section h2 {
@@ -270,6 +341,7 @@ a:hover:not(.btn) {
 	}
 }
 
+/* extra large screen */
 @media screen and (min-width: 1440px) {
 	.container {
 		margin-left: auto !important;
