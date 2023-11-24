@@ -20,128 +20,168 @@
 	<link rel="icon" href="/jovian_favicon.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
-		rel="stylesheet">
+	<link 
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
+
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-	<div id="navbar">
-		<img id="logo" alt="Jovian Logo" src="/jovian_favicon.png" height="30" />
-		<span class="logo-label">Jovian</span>
-	</div>
+<body class="overflow-x-hidden">
+	<nav class="navbar p-2 navbar-expand-md" id="navbar">
+		
+		<div class="container-md">
+			<div class="navbar-brand d-flex align-items-center">
+				<img class="me-1" id="logo" alt="Jovian Logo" src="/jovian_favicon.png" height="30"/>
+				<span class="logo-labell d-none d-sm-inline">Jovian</span>
+			</div>
+	
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav me-4 me-md-0 ms-md-auto align-items-end">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Opportunities</a>
+					</li>
+					<li class="nav-item">
+						<a class="btn btn-primary" href="#">Apply</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+
 	<img id="banner" src="banner.jpg" alt="Banner" height="240">
 
-	<h1>
-		About Jovian
-	</h1>
+	<section class="container-md px-3 py-4">
+		<h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Work at Jovian</h1>
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
 
-	<div id="about">
-		<div id="description">
-			<p style="margin-top: 0;">
-				At Jovian, we're on a mission to build
-				the world's most highly reputed technical
-				university, and we're building it completely
-				online. We offer several beginner friendly
-				courses that are taken by 300,000+ registered
-				users.
-			</p>
-			<p>
-				We also offer 2 industry-focused bootcamps:
-			<ol>
-				<li>
-					<a href="https://www.jovian.com/full-stack-developer-bootcamp">
-						Jovian Full Stack Developer Bootcamp
-					</a>
-				</li>
-				<li>
-					<a href="https://www.jovian.com/data-science-bootcamp">
-						Jovian Data Science Bootcamp
-					</a>
-				</li>
-			</ol>
-			</p>
-		</div>
-		<div id="team">
-			<img id="team-image" alt="Team" src="team.jpg">
-		</div>
-	</div>
+      <div class="col d-flex align-items-center justify-content-center">
+        <img src="team.jpg" 
+					class="rounded d-block mx-md-auto img-fluid" alt="Jovian Team photo"id="team-image" loading="lazy">
+      </div>
 
-	<h2>Employment Opportunities</h2>
-	<div id="jobs">
-		<table id="jobs-table">
-			<tr class="jobs-header-row">
-				<th rowspan="2">Job Title</th>
-				<th colspan="2">Location</th>
-				<th rowspan="2">Salary</th>
-				<th rowspan="2">Posted On</th>
-			</tr>
-			<tr class="jobs-header-row">
-				<th>City</th>
-				<th>Country</th>
-			</tr>
-			<tr class="jobs-data-row">
-				<td>Frontend Developer</td>
-				<td>Bengaluru</td>
-				<td>India</td>
-				<td>₹12,00,000</td>
-				<td>Mar 3, 2023</td>
-			</tr>
+      <div class="col-lg-6">
+        <p class="lead">
+					At Jovian, we're on a mission to build
+					the world's most highly reputed technical
+					university, and we're building it completely
+					online. We offer several beginner friendly
+					courses that are taken by 300,000+ registered
+					users.
+				</p>
 
-			<tr class="jobs-data-row">
-				<td>Full Stack Developer</td>
-				<td>New Delhi</td>
-				<td>India</td>
-				<td>₹15,00,000</td>
-				<td>Feb 1, 2023</td>
-			</tr>
+				<p>
+					We also offer 2 industry-focused bootcamps:
+					<ol>
+						<li>
+							<a href="https://www.jovian.com/full-stack-developer-bootcamp">
+								Jovian Full Stack Developer Bootcamp
+							</a>
+						</li>
+						<li>
+							<a href="https://www.jovian.com/data-science-bootcamp">
+								Jovian Data Science Bootcamp
+							</a>
+						</li>
+					</ol>
+				</p>
 
-			<tr class="jobs-data-row">
-				<td>Data Scientist</td>
-				<td>San Francisco</td>
-				<td>USA</td>
-				<td>$175,000</td>
-				<td>Dec 22, 2022</td>
-			</tr>
+      </div>
+    </div>
+  </section>
 
-			<tr class="jobs-data-row">
-				<td>ML Engineer</td>
-				<td colspan="2">Remote</td>
-				<td>$80,000</td>
-				<td>Sep 19, 2022</td>
-			</tr>
+	<section class="container-md px-0 px-md-3 py-md-4">
+		<h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Employment Opportunities</h2>
 
+		<table id="jobs-table"
+			class="table mx-auto"
+		>
+			<thead class="table-primary">
+				<tr class="jobs-header-row align-middle">
+					<th rowspan="2">Job Title</th>
+					<th colspan="2">Location</th>
+					<th rowspan="2">Salary</th>
+					<th rowspan="2">Posted On</th>
+				</tr>
+				<tr class="jobs-header-row">
+					<th>City</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+			<tbody class="">
+				<tr class="jobs-data-row">
+					<td>Frontend Developer</td>
+					<td>Bengaluru</td>
+					<td>India</td>
+					<td>₹12,00,000</td>
+					<td>Mar 3, 2023</td>
+				</tr>
+			
+				<tr class="jobs-data-row">
+					<td>Full Stack Developer</td>
+					<td>New Delhi</td>
+					<td>India</td>
+					<td>₹15,00,000</td>
+					<td>Feb 1, 2023</td>
+				</tr>
+			
+				<tr class="jobs-data-row">
+					<td>Data Scientist</td>
+					<td>San Francisco</td>
+					<td>USA</td>
+					<td>$175,000</td>
+					<td>Dec 22, 2022</td>
+				</tr>
+			
+				<tr class="jobs-data-row">
+					<td>ML Engineer</td>
+					<td colspan="2">Remote</td>
+					<td>$80,000</td>
+					<td>Sep 19, 2022</td>
+				</tr>
+			</tbody>
 		</table>
-	</div>
-
-	<div id="application">
-		<h2>Submit Your Application</h2>
+	</section>
+	
+<section id="application" class="container-md px-3 py-4">
+		<h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Submit Your Application</h2>
 
 		<form id="application-form" action="https://formbold.com/s/3wvKl" method="POST" enctype="multipart/form-data">
 			<div class="form-group">
-				<label for="name">Full Name</label><br>
-				<input type="text" id="name" name="Full Name" required placeholder="John Doe">
+				<label class="form-label" for="name">Full Name</label><br>
+				<input class="form-control" type="text" id="name" name="Full Name" required placeholder="John Doe">
 			</div>
 
 			<div class="form-group">
-				<label for="email">Email</label><br>
-				<input type="email" id="email" name="Email Address" required placeholder="jdoe@example.com">
+				<label class="form-label" for="email">Email</label><br>
+				<input class="form-control" type="email" id="email" name="Email Address" required placeholder="jdoe@example.com">
 			</div>
 
 			<div class="form-group">
-				<label for="phone">Phone</label><br>
-				<input type="tel" id="phone" name="phone" required placeholder="+919898989898">
+				<label class="form-label" for="phone">Phone</label><br>
+				<input class="form-control" type="tel" id="phone" name="phone" required placeholder="+919898989898">
 			</div>
 
 			<div class="form-group">
-				<label for="dob">Date of Birth</label><br>
-				<input type="date" id="dob" name="dob" required>
+				<label class="form-label" for="dob">Date of Birth</label><br>
+				<input class="form-control" type="date" id="dob" name="dob" required>
 			</div>
 
 			<div class="form-group">
-				<label for="position">Position Applied for</label><br>
-				<select id="position" name="Position Applied" required>
+				<label class="form-label" for="position">Position Applied for</label><br>
+				<select class="form-select" id="position" name="Position Applied" required>
 					<option value="">Select position</option>
 					<option value="frontend developer">Frontend Developer</option>
 					<option value="full stack developer">Full Stack Developer</option>
@@ -151,30 +191,30 @@
 			</div>
 
 			<div class="form-group">
-				<label for="resume">Upload Resume</label><br>
-				<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+				<label class="form-label" for="resume">Upload Resume</label><br>
+				<input class="form-control" type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
 			</div>
 
 			<div class="form-group">
-				<label for="coverletter">Cover Letter</label><br>
-				<textarea id="coverletter" name="coverletter" rows="5"
+				<label class="form-label" for="coverletter">Cover Letter</label><br>
+				<textarea class="form-control" id="coverletter" name="coverletter" rows="5"
 					placeholder="Explain what makes you suitable for the job.."></textarea>
 			</div>
 
 			<div class="form-group">
-				<label for="terms">
-					<input type="checkbox" id="terms" name="terms" required>
+				<label class="form-label" for="terms">
+					<input class="form-check-input me-2" type="checkbox" id="terms" name="terms" required>
 					I agree to the terms and conditions
 				</label>
 			</div>
 
 			<div class="form-group">
-				<input type="submit" value="Submit Application">
+				<input class="btn btn-primary" type="submit" value="Submit Application">
 			</div>
 
 		</form>
 
-	</div>
+	</section>
 
 
 
