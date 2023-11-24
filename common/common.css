@@ -4,7 +4,7 @@
 	font-weight: normal;
 }
 
-/* shared grid classes */
+/* shared flex classes */
 
 .d-flex { 
 	display: flex;
@@ -16,6 +16,26 @@
 .align-items-center, .align-center { align-items: center; }
 
 .flex-nowrap { flex-wrap: nowrap; }
+
+/* grid utils */
+
+.grid-visualizer {
+	--gv-color: #F002;
+	--gv-col-num: 12;
+	--gv-gap-num: calc(var(--gv-col-num) - 1);
+	--gv-gap-size: 20px;
+	/* column width = (100% - (N-1) * gap) / N */
+	--gv-col-size: calc((100% - var(--gv-gap-num) * var(--gv-gap-size)) / var(--gv-col-num) );
+
+	background-image: 
+		repeating-linear-gradient(to right, 
+			var(--gv-color) 0, 
+			var(--gv-color) var(--gv-col-size), 
+			transparent var(--gv-col-size), 
+			transparent calc(var(--gv-col-size) + var(--gv-gap-size))
+		);
+	background-clip: content-box;
+}
 
 /* cursor styles */
 
